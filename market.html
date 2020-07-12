@@ -1,0 +1,347 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Market</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/market.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">site logo</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav navul text-center ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="market.html">Market</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">crop converter</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              About us
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Our company</a>
+              <a class="dropdown-item" href="#">our people</a>
+              <a class="dropdown-item" href="#">faq</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./errorpage.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link loginbtn" href="./errorpage.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+    <div class="market mt-4">
+      <div class="market-content">
+        <h1>SELECT A PRODUCT TO BUY/SELL</h1>
+        <div class="btns-products">
+          <input
+            type="button"
+            value="Grains"
+            class="market-btn btn1"
+            onclick=" grains();"
+          />
+          <input
+            type="button"
+            value="Nuts"
+            class="market-btn btn2"
+            onclick="nuts();"
+          />
+          <input
+            type="button"
+            value="Cashew"
+            class="market-btn btn3"
+            onclick=" cashew();"
+          />
+          <input
+            type="button"
+            value="Coffee"
+            class="market-btn btn4"
+            onclick="coffee();"
+          />
+          <input
+            type="button"
+            value="Olive oil"
+            class="market-btn btn5"
+            onclick="olive();"
+          />
+        </div>
+      </div>
+      <hr class="market-hr" />
+      <div class="grains" id="grains">
+        <div class="main-product">
+          <div>
+            <div class="rice1">
+              <img src="./photos/Agroimp__0017_cereals.png" alt="" />
+            </div>
+            <p class="rice-text">Grains</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/Agroimp__0017_cereals.png" alt="" />
+            </div>
+            <p class="rice-text">Grains2</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/Agroimp__0017_cereals.png" alt="" />
+            </div>
+            <p class="rice-text">grauns3</p>
+          </div>
+        </div>
+      </div>
+      <!-- nuts start  -->
+      <div class="nuts" id="nuts">
+        <div class="main-product">
+          <div>
+            <div class="rice1">
+              <img src="./photos/nuts2.png" alt="" />
+            </div>
+            <p class="rice-text">Nuts</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/nuts2.png" alt="" />
+            </div>
+            <p class="rice-text">nuts2</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/nuts2.png" alt="" />
+            </div>
+            <p class="rice-text">nuts3</p>
+          </div>
+        </div>
+      </div>
+      <!-- nuts end  -->
+      <!-- cashew start  -->
+      <div class="cashew" id="cashew">
+        <div class="main-product">
+          <div>
+            <div class="rice1">
+              <img src="./photos/Cashew.png" alt="" />
+            </div>
+            <p class="rice-text">cashew</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/Cashew.png" alt="" />
+            </div>
+            <p class="rice-text">cashew2</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/Cashew.png" alt="" />
+            </div>
+            <p class="rice-text">cashew3</p>
+          </div>
+        </div>
+      </div>
+      <!-- cashew end  -->
+
+      <!-- coffee start  -->
+      <div class="coffee" id="coffee">
+        <div class="main-product">
+          <div>
+            <div class="rice1">
+              <img src="./photos/coffee.png" alt="" />
+            </div>
+            <p class="rice-text">coffee</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/coffee.png" alt="" />
+            </div>
+            <p class="rice-text">coffee2</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/coffee.png" alt="" />
+            </div>
+            <p class="rice-text">coffee3</p>
+          </div>
+        </div>
+      </div>
+      <!-- coffee end  -->
+
+      <!-- olive start  -->
+      <div class="olive" id="olive">
+        <div class="main-product">
+          <div>
+            <div class="rice1">
+              <img src="./photos/olive.png" alt="" />
+            </div>
+            <p class="rice-text">olive</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/olive.png" alt="" />
+            </div>
+            <p class="rice-text">olive2</p>
+          </div>
+          <div>
+            <div class="rice1">
+              <img src="./photos/olive.png" alt="" />
+            </div>
+            <p class="rice-text">coffee3</p>
+          </div>
+        </div>
+      </div>
+      <!-- olive end  -->
+      <hr class="market-hr" />
+      <div class="market-end">
+        <div>
+          <p class="bottom-text">CAN'T FIND THE PRODUCT YOU ARE LOOKING FOR?</p>
+        </div>
+        <div><input type="button" value="Talk to us" class="market-btn" /></div>
+      </div>
+    </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              cumque numquam ea, vel alias excepturi eaque recusandae in
+              dignissimos illum a iit quaerat inventore dolores debitis ab,
+              maiores harum iste alias itaque amet. Temporibus iste quasi
+              voluptate blanditiis consequatur?
+            </p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  >UI Design</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  >PHP</a
+                >
+              </li>
+              <li>
+                <a href="#">Java</a>
+              </li>
+              <li>
+                <a href="#">Android</a>
+              </li>
+              <li>
+                <a href="#">etc</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  >Contribute</a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/privacy-policy/"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">
+              Copyright &copy; 2020 All Rights Reserved by
+              <a href="#">vijay</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li>
+                <a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+
+              <li>
+                <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end  -->
+
+    <script src="./JS/market.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
