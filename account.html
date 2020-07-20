@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/account.css" />
+
+    <title>Account</title>
+  </head>
+  <body>
+    <div class="content">
+      <div class="container user-layout">
+        <div class="row">
+          <div class="user-layout__col">
+            <div class="text-xs-center user-menu" style="padding: 1em;">
+              <div class="user-menu__profile">
+                <div class="user-menu__profile_photo_container">
+                  <div class="user-menu__profile_photo">
+                    <img
+                      src="https://agrimp.com/assets/placeholders/profile-38a4df939befc091445b3b4f595c07e82815e2b2a1d31549e57c7ded6d9b2cb1.png"
+                      alt="Profile"
+                    />
+                  </div>
+                </div>
+                Vijay Dhyani
+              </div>
+
+              <div class="user-menu__link">
+                <a href="/users/1922">Account Information</a>
+              </div>
+
+              <div class="user-menu__link">
+                <a href="/users/1922/payment_info">Company Information</a>
+              </div>
+
+              <div class="user-menu__link">
+                <a href="/users/1922/bids">My Deals</a>
+              </div>
+
+              <div class="user-menu__link">
+                <a href="/users/1922/saved_bids">My Saved List</a>
+              </div>
+
+              <div class="user-menu__link">
+                <a href="/users/1922/pending_bids">Pending Payment List</a>
+              </div>
+
+              <div class="user-menu__link">
+                <a href="/users/1922/notifications">Notifications</a>
+              </div>
+
+              <div class="user-menu__link">
+                <a
+                  data-confirm="Are you sure?"
+                  rel="nofollow"
+                  data-method="delete"
+                  href="/users"
+                  >Delete Account</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-8 user-layout__col" style="padding-left: 49px;">
+            <form
+              class="edit_user"
+              id="edit_user_1922"
+              enctype="multipart/form-data"
+              action="/users/1922"
+              accept-charset="UTF-8"
+              method="post"
+            >
+              <input name="utf8" type="hidden" value="&#10003;" /><input
+                type="hidden"
+                name="_method"
+                value="patch"
+              /><input
+                type="hidden"
+                name="authenticity_token"
+                value="lANgBuDSPT165BGMopacV8SrS1xzL4y2w7j2vpDfhUeYOA94SERNI47LJuWVKVJ1S5ata5jOW4h9qoL6vVaE+A=="
+              />
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="bid-list__header user_menu_title">
+                    Account Information
+                  </h2>
+                </div>
+              </div>
+
+              <div class="row row--field">
+                <div class="col-md-4">
+                  <label class="input-picture" for="user_profile_picture">
+                    <img
+                      src="https://agrimp.com/assets/icons/photo-142975824a4cb52e519f87ef80e6c3abbda9de545771be5a8e918611d7721254.png"
+                      alt="Photo"
+                    />
+                    Click to add Photo
+                    <input
+                      accept="image/*"
+                      type="file"
+                      name="user[profile_picture]"
+                      id="user_profile_picture"
+                    />
+                  </label>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="user_Available Balance">Available balance</label>
+                  <div class="tool-tip">
+                    <i class="tool-tip__icon-info">i</i>
+                    <p class="tool-tip__hidden-bottom">
+                      <span class="info">
+                        <span class="info__title">Info: </span>
+                        <span class="info__text">
+                          � Balance available to make transactions.
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                  <br />
+                  �0,00
+                </div>
+
+                <div class="col-md-4">
+                  <label for="user_Accounting Balance"
+                    >Accounting balance</label
+                  >
+                  <div class="tool-tip">
+                    <i class="tool-tip__icon-info">i</i>
+                    <p class="tool-tip__hidden-bottom">
+                      <span class="info">
+                        <span class="info__title">Info: </span>
+                        <span class="info__text">
+                          � Actual account balance (includes transaction value
+                          in progress).
+                        </span>
+                      </span>
+                    </p>
+                  </div>
+                  <br />
+                  �0,00
+                </div>
+              </div>
+
+              <div class="row row--field">
+                <div class="col-md-6">
+                  <label for="user_first_name">First Name</label><br />
+                  <input
+                    class="form-control"
+                    type="text"
+                    value="Vijay"
+                    name="user[first_name]"
+                    id="user_first_name"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="user_last_name">Last Name</label><br />
+                  <input
+                    class="form-control"
+                    type="text"
+                    value="Dhyani"
+                    name="user[last_name]"
+                    id="user_last_name"
+                  />
+                </div>
+              </div>
+
+              <div class="row row--field">
+                <div class="col-md-6">
+                  <label for="user_email">Email</label><br />
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="user[email]"
+                    id="user_email"
+                  />
+                </div>
+
+                <div class="col-md-6">
+                  <label for="user_preferred_language">Preferred Language</label
+                  ><br />
+                  <select
+                    class="form-control"
+                    name="user[preferred_language]"
+                    id="user_preferred_language"
+                    ><option selected="selected" value="en"
+                      >English (EN)</option
+                    >
+                    <option value="pt">Portuguese (PT)</option>
+                    <option value="es">Spanish (ES)</option>
+                    <option value="fr">French (FR)</option></select
+                  >
+                </div>
+              </div>
+
+              <div class="row row__save">
+                <div class="col-md-4">
+                  <a
+                    class="btn btn-transparent btn--large alert"
+                    href="/users/edit"
+                    >Change Password</a
+                  >
+                </div>
+                <div class="col-md-4">
+                  <input
+                    type="submit"
+                    name="commit"
+                    value="Save"
+                    class="btn btn-solid btn--large btn_user_update"
+                    data-disable-with="Save"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
